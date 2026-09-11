@@ -1,4 +1,5 @@
 // import "./Read.css"  // FOR class CSS
+import {toast} from "react-toastify";
 
 const Readd = (props) => {
      const todos = props.todos;
@@ -6,7 +7,9 @@ const Readd = (props) => {
 
     const DeleteHandler = (id) => {
       const  filtertodo = todos.filter((todo) => todo.id != id);
-      settodos(filtertodo)
+      settodos(filtertodo);
+
+      toast.error("Todo Deleted!");
       
     }
 
