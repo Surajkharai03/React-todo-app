@@ -6,7 +6,7 @@ const Create = (props) => {
        
  const SubmitHandler = (e) => {
     e.preventDefault();     // for from submit bhi ho jaye or page refresh bhi na ho
-    const newuser ={fullname, age} // isme hmare useState ki value thi
+    const newuser ={fullname, age} // isme hmare useState ki value thi  
    console.log(newuser);  //api - backend - database m hm ye data bhej skte h
 
    // set the user in the setusers

@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import {toast} from "react-toastify";
 import { nanoid } from "nanoid";
+import { useContext } from "react";
+import { todocontext } from "../Wrapper";
 
-const Createe = (props) => {
-    const todos = props.todos;
-    const settodos = props.settodos;
-
+const Createe = () => {
+    const [todos, settodos] = useContext(todocontext);   // jga bhi hme main data ko use krna h vha pr hm useContext ka use krnege
 
      const {
       register,    // for two way binding
